@@ -1,0 +1,45 @@
+enum m16_e : __int32
+{
+  M16_DEPLOY = 0x0,
+  M16_IDLE = 0x1,
+  M16_SHOOT = 0x2,
+  M16_RELOAD = 0x3,
+  M16_RELOAD_EMPTY = 0x4,
+  M16_HOLSTER = 0x5,
+  M16_TOBURST = 0x6,
+  M16_DEPLOYTWO = 0x7,
+  M16_IDLETWO = 0x8,
+  M16_SHOOTTWO = 0x9,
+  M16_RELOADTWO = 0xA,
+  M16_RELOAD_EMPTYTWO = 0xB,
+  M16_HOLSTERTWO = 0xC,
+  M16_TOSINGLE = 0xD,
+  M16_SPRINT_TO = 0xE,
+  M16_SPRINT = 0xF,
+  M16_SPRINT_FROM = 0x10,
+  M16_SUICIDE = 0x11,
+  M16_IRON_TO = 0x12,
+  M16_IRON_IDLE = 0x13,
+  M16_IRON_FROM = 0x14,
+  M16_IRON_SHOOT = 0x15,
+  M16_MELEE = 0x16,
+  M16_SHOOT_NOSHOT = 0x17,
+  M16_SHOOT_NOSHOT_BURST = 0x18,
+  M16_IRON_SHOOT_NOSHOT = 0x19,
+  M16_FIDGET1 = 0x1A,
+  M16_FIDGET2 = 0x1B,
+  M16_FIDGET3 = 0x1C,
+  M16_FIDGET1_BURST = 0x1D,
+  M16_FIDGET2_BURST = 0x1E,
+  M16_FIDGET3_BURST = 0x1F,
+  M16_IRON_SINGLE_TO_BURST = 0x20,
+  M16_IRON_BURST_TO_SINGLE = 0x21,
+};
+
+/* 394 */
+struct __cppobj __declspec(align(4)) CM16 : CBasePlayerWeapon
+{
+  int shoot_num;
+  int m_iShell;
+  bool b_BurstMode;
+};
