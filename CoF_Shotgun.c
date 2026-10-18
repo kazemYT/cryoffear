@@ -4,7 +4,6 @@
  * built  : 2012-03-21 21:35:13 UTC (PDB signature 1332365713, age 17)
  * rule   : Class::member -> Class__member, `name' -> _name_ (see tools/rebuild_tree.py)
  */
-#include "cof_decls.h"
 
 void __cdecl weapon_shotgun(entvars_s *pev)
 {
